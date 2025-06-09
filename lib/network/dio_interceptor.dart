@@ -27,7 +27,6 @@ class  DioInterceptor extends Interceptor {
 
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    print(options.data);
     return handler.next(options);
   }
 

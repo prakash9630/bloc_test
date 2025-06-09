@@ -6,10 +6,9 @@ import 'dart:io';
 Future<bool> isInternetAvailable() async {
   var connectivityResult = await Connectivity().checkConnectivity();
 
-  if (connectivityResult == ConnectivityResult.none) {
+  if (connectivityResult.contains(ConnectivityResult.none)) {
     return false; // No WiFi or mobile
   }
-
   try {
     final result = await InternetAddress.lookup('google.com');
     if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {

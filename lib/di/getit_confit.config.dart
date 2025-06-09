@@ -22,7 +22,7 @@ import '../services/home/data/repository/login_repository_impl.dart' as _i137;
 import '../services/home/doman/repositories/login_repository.dart' as _i801;
 import '../services/home/doman/usecase/login_usecase.dart' as _i306;
 import '../services/home/presentatin/bloc/login_bloc.dart' as _i111;
-import '../services/ip_info/data/datasource/Ip_data_source.dart' as _i541;
+import '../services/ip_info/data/datasource/ip_data_source.dart' as _i541;
 import '../services/ip_info/data/repository/ip_repository_impl.dart' as _i469;
 import '../services/ip_info/doman/repository/ip_repository.dart' as _i140;
 import '../services/ip_info/doman/usecase/ip_usecase.dart' as _i698;

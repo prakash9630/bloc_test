@@ -17,7 +17,6 @@ class LoginRepoSourceImpl extends RequestCall implements LoginRepoSource {
         onResponse: (data){
             return data;
         });
-    print(result);
     return true;
   }
 

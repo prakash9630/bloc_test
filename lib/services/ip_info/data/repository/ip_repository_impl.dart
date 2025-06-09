@@ -1,4 +1,4 @@
-import 'package:bloc_test/services/ip_info/data/datasource/Ip_data_source.dart';
+import 'package:bloc_test/services/ip_info/data/datasource/ip_data_source.dart';
 import 'package:bloc_test/services/ip_info/data/model/ip_model.dart';
 import 'package:injectable/injectable.dart';
 import '../../doman/repository/ip_repository.dart';
