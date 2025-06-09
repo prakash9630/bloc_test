@@ -12,7 +12,7 @@
 import 'package:auto_route/auto_route.dart' as _i4;
 import 'package:bloc_test/services/home/presentatin/views/home_screen.dart'
     as _i1;
-import 'package:bloc_test/services/ip_info/presentation/screen/Ip_screen.dart'
+import 'package:bloc_test/services/ip_info/presentation/screen/ip_screen.dart'
     as _i2;
 import 'package:bloc_test/services/jokes/presentation/screen/jokes_screen.dart'
     as _i3;

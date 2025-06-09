@@ -4,7 +4,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import '../core/share_prefrences/share_prefrences.dart';
 import '../core/util/check_connectivity.dart';
-import '../di/getit_confit.dart';
 
 class Failure {
   String? message;

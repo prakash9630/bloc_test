@@ -47,7 +47,7 @@ extension GetItInjectableX on _i174.GetIt {
     final registerModule = _$RegisterModule();
     final dioModule = _$DioModule();
     gh.factory<_i450.JokesCubit>(() => _i450.JokesCubit());
-    gh.singleton<_i918.InternetCheacker>(() => _i918.InternetCheacker());
+    gh.singleton<_i918.InternetChecker>(() => _i918.InternetChecker());
     await gh.lazySingletonAsync<_i460.SharedPreferences>(
       () => registerModule.prefs,
       preResolve: true,

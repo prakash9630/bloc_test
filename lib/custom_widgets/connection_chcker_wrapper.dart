@@ -10,7 +10,7 @@ class InternetCheckerWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<InternetCheacker, bool>(listener: (context, state) {
+    return BlocListener<InternetChecker, bool>(listener: (context, state) {
       onNetworkChange(state);
     },
     child:child,);

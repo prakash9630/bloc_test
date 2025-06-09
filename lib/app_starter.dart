@@ -14,7 +14,7 @@ class AppStarter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocWrapper(
-      child:BlocListener<InternetCheacker, bool>(
+      child:BlocListener<InternetChecker, bool>(
         listener: (BuildContext context,state) {
           if(!state){
             showErrorToast("No internet connection");

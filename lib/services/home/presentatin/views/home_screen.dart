@@ -1,4 +1,3 @@
-import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:bloc_test/core/routes/app_router.gr.dart';
 import 'package:bloc_test/custom_widgets/custom_dropdown.dart';
@@ -55,7 +54,6 @@ class HomeScreen extends StatelessWidget {
                       BlocListener<LoginBloc, LoginState>(
                         listener: (BuildContext _, state) {
                           if (state is LoginSuccess) {
-                            print("success");
                             context.router.push(const IpRoute());
                             // context.router.push(const JokesRoute());
 
@@ -63,7 +61,6 @@ class HomeScreen extends StatelessWidget {
                               content: Text(state.success.toString()),
                             ));
                           } else if (state is LoginError) {
-                            print("failure");
                             ScaffoldMessenger.of(context)
                                 .showSnackBar(const SnackBar(
                               content: Text("error occored"),

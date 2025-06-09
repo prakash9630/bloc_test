@@ -10,7 +10,7 @@ class MultiBlocWrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(providers: [
-     BlocProvider(create: (_)=>getIt<InternetCheacker>()..checkInternet())
+     BlocProvider(create: (_)=>getIt<InternetChecker>()..checkInternet())
     ], child: child);
   }
 }

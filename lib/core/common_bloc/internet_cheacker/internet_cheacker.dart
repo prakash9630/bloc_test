@@ -6,22 +6,19 @@
 
 
   @singleton
-  class InternetCheacker extends Cubit<bool>{
-    InternetCheacker() : super(false);
+  class InternetChecker extends Cubit<bool>{
+    InternetChecker() : super(false);
 
     void checkInternet() async {
       Connectivity().onConnectivityChanged.listen((event) async {
         if(event.contains(ConnectivityResult.wifi)){
-          emit(true);
+          final lookup = await InternetAddress.lookup('google.com');
+          emit(lookup.isNotEmpty && lookup[0].rawAddress.isNotEmpty);
         }else if(event.contains(ConnectivityResult.mobile)){
-          emit(true);
+          final lookup = await InternetAddress.lookup('google.com');
+          emit(lookup.isNotEmpty && lookup[0].rawAddress.isNotEmpty);
         }else{
-          try {
-            final lookup = await InternetAddress.lookup('google.com');
-            emit(lookup.isNotEmpty && lookup[0].rawAddress.isNotEmpty);
-          } catch (_) {
-            emit(false);
-          }
+          emit(false);
         }
       });
     }
